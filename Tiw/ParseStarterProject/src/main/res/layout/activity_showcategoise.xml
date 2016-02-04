@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edCatname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:hint="Category name"
+        android:gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ADD"
+        android:id="@+id/bntAddCat"
+        android:layout_alignBottom="@+id/edCatname"
+        android:layout_toRightOf="@+id/edCatname"
+        android:layout_toEndOf="@+id/edCatname"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="20dp"
+        android:touchscreenBlocksFocus="true"
+        android:cacheColorHint="#ff560d"
+        android:textColor="#a8ff4e"
+        android:textFilterEnabled="false" />
+
+</LinearLayout>
